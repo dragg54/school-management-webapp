@@ -1,0 +1,67 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/college.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    height: 70px;
+    width: 80%;
+    padding: 20px;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+li.sign-in{
+    padding:5px;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 1.35rem;
+    color: white;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.caption-container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-caption {
+    font-size: 7rem;
+    color: blue;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secondary-caption {
+    font-family: 'Dancing Script', cursive;
+    color: #efefef;
+    font-size: 1.4rem;
+}
