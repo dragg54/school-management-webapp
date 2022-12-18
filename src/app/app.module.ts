@@ -6,6 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import { RegisterComponent } from './register/register.component';
 import { SignupComponent } from './signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterService } from './register.service';
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { StudentDashboardComponent } from './dashboard/student-dashboard/student-dashboard.component'
 
 @NgModule({
   declarations: [
@@ -13,13 +18,17 @@ import { SignupComponent } from './signup/signup.component';
     HomeComponent,
     SigninComponent,
     RegisterComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent,
+    StudentDashboardComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [RegisterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

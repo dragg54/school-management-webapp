@@ -1,1 +1,9 @@
-<p>signin works!</p>
+<div class="signup-container">
+    <form action="POST" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+        <input type="text" formControlName="username" placeholder="username"><br>
+        <input type="email" formControlName="email" placeholder="email"><br>
+        <input type="password" formControlName="password" placeholder="password"><br>
+        <input type="submit" value="Submit" class="submit-button"/>
+    </form>
+
+</div>

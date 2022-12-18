@@ -5,9 +5,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./assets//register.jpg");
+    background-image: url("./assets//reg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+input{
+    margin-bottom:25px;
+    width: 450px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid gray;
+    box-shadow: 1px 1px gray;
+}
+
+.submit-button{
+    background-color: #870A30;
+    color: #efefef
+}
+
+h1{
+    color: #870A30;
+    margin-bottom: 20px;
+}
+
+form{
+    background: #fff;
+    padding:25px 15px;
+    border-radius: 4px;
+}
