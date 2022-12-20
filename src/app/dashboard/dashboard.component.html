@@ -1,1 +1,18 @@
-<p>dashboard works!</p>
+<div class="dashboard-wrapper">
+    <div class="nav">
+        <h1>WELCOME BACK, <span style="color:#870A30">{{user?.first_name | titlecase}} {{user?.last_name | titlecase}}</span></h1>
+        <div class="logout-container">Log Out</div>
+    </div>
+    <div class="aside">
+        <ul>
+            <a routerLink="dashboard-home" routerLinkActive="active"><li><i class="fa-solid fa-house" style="margin-right: 10px;width: 20px;"></i>Home</li></a>
+            <a routerLink="profile" routerLinkActive="active"><li><i class="fa-solid fa-user" style="margin-right: 10px;width: 20px;"></i>Profile</li></a>
+            <a routerLink="payment" routerLinkActive="active"><li><i class="fa-solid fa-money-bill" style="margin-right: 10px; width: 20px;"></i>Payments</li></a>
+            <a routerLink="course" routerLinkActive="active"><li><i class="fa-solid fa-book" style="margin-right: 10px; width: 20px;"></i>Courses</li></a>
+            <li><i class="fa-solid fa-pen-to-square" style="margin-right: 10px; width: 20px;"></i>Results</li>
+            <li><i class="fa-solid fa-bell"  style="margin-right: 10px; width: 20px;"></i>Notification</li>
+        </ul>
+    </div>
+   
+   <div class="section"><router-outlet></router-outlet></div> 
+</div>
