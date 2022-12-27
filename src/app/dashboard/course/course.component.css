@@ -1,0 +1,42 @@
+.course-wrapper{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.course-container{
+    width: 700px;
+    height: 600px;
+    margin-top: -100px;
+}
+
+table{
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    background-color: #efefef;
+    color: #444444
+}
+
+td{
+    height: 40px;
+    margin-top: 5px;
+    background-color: #efefef;
+}
+
+thead{
+    background-color: red;
+}
+
+tr{
+    height: 40px;
+}
+
+.head{
+    background-color: #870A30;
+    color: #efefef
+}
